@@ -1,0 +1,336 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman',
+    Times,
+    serif;
+    
+}
+nav{
+    
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+}
+#con{
+    margin-top: 70px;
+}
+#son{
+    margin-top: 70px;
+}
+#r{
+    margin-left: 800px;
+    margin-top: 20px;
+}
+#lnd{
+    background-image: url("background11.png");
+    background-position: center;
+    background-size: cover;
+    height: 663px;
+    
+}
+#pi{
+    margin-left: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+#slide {
+    position: relative;
+    left: -1000px;
+    -webkit-animation: slide 0.1s backwards;
+    -webkit-animation-delay: 0.1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+
+#bs{
+    margin-left: 60px;
+    padding-top: 100px;
+    letter-spacing: -10px;
+    font-size: 110px;
+    color: white;
+    font-weight: bold;
+    line-height: 120px;
+    animation: color 10s cubic-bezier(0, 1, 0, 1) infinite;
+}
+@-webkit-keyframes color {
+    0% {
+        color: rgb(255, 204, 0)
+        ;
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+
+}  
+
+
+span {
+    color: rgb(255, 204, 0);
+    animation: color 11s cubic-bezier(1, 0, 1, 0) infinite;
+}
+
+/* Key frames for span */
+@-webkit-keyframes color {
+    0% {
+        color: rgb(255, 255, 255);
+
+    }
+
+    100% {
+        color: rgb(255, 204, 0);
+
+    }
+}
+
+/* button */
+.butt{
+    width: 180px;
+    height: 50px;
+    border-radius: 200px;
+    color: rgb(0, 0, 0);
+    margin-top: -9px;
+    border-style: none;
+    background-color: rgb(255, 208, 0);
+    font-weight: bold;
+    font-size: 15px;
+    transition: ease-in-out 0.5s;
+}
+.butt:hover{
+    border: 4px solid rgb(255, 208, 0);
+    background-color: transparent;
+    color: rgb(255, 208, 0);
+}
+.butt:focus{
+    outline: none;
+}
+.but{
+    margin-left: 60px;
+    width: 180px;
+    height: 50px;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    border-style: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 17px;
+    border: 4px solid rgb(255, 255, 255);
+    transition: ease-in-out 0.5s;
+}
+.but:hover {
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.but:focus {
+    outline: none;
+}
+/* Inputs */
+input[type=text]{
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+    color: purple;
+}
+input[type=text]::placeholder{
+    font-size: 20px;
+}
+input[type=text]:focus{
+    outline: 2px solid  rgb(102, 51, 0);
+}
+/* Email */
+input[type=email]{
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+    color: purple;
+}
+input[type=email]::placeholder{
+    font-size: 20px;
+}
+input[type=email]:focus {
+    outline: 2px solid  purple;
+}
+/* Number */
+input[type=number]{
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+    color: purple;
+}
+input[type=number]::placeholder{
+    font-size: 20px;
+}
+input[type=number]:focus {
+    outline: 2px solid  purple;
+}
+/*  */
+input[type=text]   {
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    
+    font-size: 20px;
+    color: purple;
+}
+input[type=text]:focus {
+    outline: 2px solid  purple;
+}
+
+/* send message */
+.send {
+    width: 180px;
+    height: 50px;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    border-style: none;
+    background-color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transition: ease-in-out 0.5s;
+}
+
+.send:hover {
+    border: 4px solid purple;
+    background-color: transparent;
+    color: purple;
+}
+
+.send:focus {
+    outline: none;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:500px){
+    #lnd{
+        height: 880px;
+        
+    }
+    a{
+        color: rgb(0, 0, 0);
+    }
+    #ii{
+        padding-top: 450px;
+        width: 320px;
+        padding-top: 500px;
+        float: none;
+    }
+    #bs{
+        font-size: 90px;
+        letter-spacing: -6px;
+        margin-left: 20px;
+        line-height: 90px;
+        
+    }
+    #pi{
+        font-size: 30px ;
+        letter-spacing: -1px ;
+        line-height: 30px;
+        margin-left: 20px;
+    }
+    .but{
+       margin-left: 20px;
+    }
+    #img1{
+        width: 300px;
+        margin-left: 30px;
+        
+    }
+    .send{
+        margin-bottom: 50px;
+    }
+    #items{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width:416px) {
+    
+    #ii{
+        padding-left:50px;
+        width: 0px;
+        float: none;
+    }
+    #bs {
+        font-size: 60px;
+        letter-spacing: -2px;
+        margin-left: 10px;
+        line-height: 60px;
+        text-align: center;
+        margin-top: -70px;
+    }
+    #lnd{
+        height: 625px;
+        width: inherit;
+    }
+    #pi{
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+    .but{
+       width: 150px;
+       font-size: 15px;
+       height: 45px;
+    }
+    .butt{
+        width: 150px;
+        font-size: 15px;
+        height: 45px;
+        margin-top: 2px;
+    }
+    input[type=text]{
+        width: 300px;
+    }
+    input[type=email]{
+        width: 300px;
+    }
+    input[type=number]{
+        width: 300px;
+    }
+   #add{
+        width: 300px;
+    }
+    #con{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1199.98px){
+    #ii{
+        width: 200px;
+        margin-right: -220px;
+    }
+}
